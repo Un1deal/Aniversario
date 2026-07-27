@@ -92,7 +92,7 @@ body {
 
 /* TÍTULO */
 h1 {
-    font-size: clamp(12px, 3.8vw, 20px); 
+    font-size: clamp(8px, 3.8vw, 15px); 
     margin: 0;
     color: rgb(3, 99, 67);
     text-align: center;
