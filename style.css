@@ -1,0 +1,187 @@
+
+
+
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url("fondo.gif");
+    background-size: cover;
+    font-family: "pixelify Sans", sans-serif;
+}
+
+/*el puto envelope de mierda*/
+
+#envelope-container{
+    text-align: center;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {transform: scale(1)}
+    
+}
+
+#envelope{
+    width: 80vw; 
+    
+    max-width: 600px; 
+    min-width: 250px;
+    animation: pulse 1.5s infinite;
+    cursor: pointer;
+}
+
+#cartita{
+    display: none;
+    position: fixed;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.ventana-carta{
+    box-sizing: border-box;
+    width: 95vw;
+    max-width: 1200px;
+    padding: 15% 8% 5% 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-image: url("ventana-emergente.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px;
+    gap: 1px;
+    padding-top: 135px;
+    aspect-ratio: 4 / 3;
+    transform: scale(1.2);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.ventana-carta.abrir{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/*Un1*/
+
+.un1{
+    
+    width: 40vw; 
+    
+    
+    max-width: 350px; 
+    min-width: 150px; 
+    margin: 0px 0;
+    transition: width 0.4s ease;
+}
+
+.ventana-carta.final .un1{
+    width: 40vw; 
+    
+    
+    max-width: 220px; 
+    min-width: 150px; 
+
+    padding-top: 100px;
+}
+
+/*fonts*/
+
+h1{
+    font-size: clamp(10px, 5vw, 25px);
+    margin: 0;
+    color: rgb(3, 99, 67);
+    margin-top: 30px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    font-size: clamp(10px, 6vw, 20px);
+    color:rgb(9, 129, 83) ;
+}
+
+/*botones*/
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.no-wrapper{
+    position: relative;
+}
+
+.btn,
+.yes-btn,
+.no-btn {
+    
+    width: 35vw; 
+    
+    
+    max-width: 250px; 
+    min-width: 100px; 
+    
+    height: auto;
+    display: inline-block;
+}
+
+.btn{
+    cursor: pointer;
+    user-select: none;
+}
+.yes-btn,
+.no-btn{
+    height: auto;
+    display: inline-block;
+}
+
+.yes-btn{
+    position: relative;
+    z-index: 2;
+    transform-origin: center center;
+    transition: transform 0.3s ease;
+}
+
+.no-btn{
+    z-index: 1;
+    position: relative;
+    transition: transform 0.15s ease;
+    cursor: default;
+}
+
+.final-text{
+    font-size: clamp(14px, 4vw, 22px);
+    line-height: 1.4;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 240, 240, 0.5);
+    border-radius: 12px;
+   
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
