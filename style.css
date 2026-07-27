@@ -68,7 +68,7 @@ body{
 }
 
 .bg-ventana {
-    width: 600px;
+    width: 450px;
     height: auto;
     display: block;
 }
@@ -94,6 +94,8 @@ body{
     min-width: 90px;    
     margin: 0;
     transition: width 0.4s ease;
+
+    padding-bottom: 30px;
 }
 
 .ventana-carta.final .un1{
@@ -109,7 +111,7 @@ body{
 /*fonts*/
 
 h1{
-    font-size: clamp(12px, 3.8vw, 18px); 
+    font-size: clamp(10px, 3vw, 14px); 
     margin: 0;
     color: rgb(3, 99, 67);
     text-align: center;
@@ -117,6 +119,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 100px;
 }
 
 p{
@@ -146,6 +149,7 @@ p{
     min-width: 75px;    
     height: auto;
     display: inline-block;
+    padding-bottom: 80px;
 }
 
 .btn{
