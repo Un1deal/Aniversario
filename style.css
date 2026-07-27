@@ -50,25 +50,13 @@ body{
     align-items: center;
 }
 
-.ventana-carta{
-    box-sizing: border-box;
-    width: 95vw;
-    max-width: 1200px;
-    padding: 15% 8% 5% 8%;
-
+.ventana-carta {
+    position: relative; 
+    width: 90vw;
+    max-width: 600px; 
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    background-image: url("ventana-emergente.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 12px;
-    gap: 1px;
-    padding-top: 135px;
-    aspect-ratio: 4 / 3;
     transform: scale(1.2);
     opacity: 0;
     transition: transform 0.6s ease, opacity 0.6s ease;
@@ -77,6 +65,24 @@ body{
 .ventana-carta.abrir{
     transform: scale(1.2);
     opacity: 1;
+}
+
+.bg-ventana {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenido-interno {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12% 15%; 
+    box-sizing: border-box;
+    gap: 5px;
 }
 
 /*Un1*/
@@ -186,10 +192,3 @@ p{
     justify-content: center;
 }
 
-@media (max-width: 768px) {
-    .ventana-carta {
-        transform: scale(1); 
-        width: 90vw;
-        padding-top: 100px; 
-    }
-}
