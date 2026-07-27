@@ -41,7 +41,7 @@ body {
 
 .ventana-carta {
     position: relative; 
-    width: 95vw;          
+    width: 105vw;          
     max-width: 650px;     
     display: flex;
     justify-content: center;
