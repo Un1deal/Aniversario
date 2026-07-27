@@ -121,9 +121,9 @@ p {
 .btn,
 .yes-btn,
 .no-btn {
-    width: 25vw;        
-    max-width: 120px;   
-    min-width: 65px;    
+    width: 20vw;        
+    max-width: 100px;   
+    min-width: 55px;    
     height: auto;
     display: inline-block;
 }
