@@ -185,3 +185,11 @@ p{
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .ventana-carta {
+        transform: scale(1); 
+        width: 90vw;
+        padding-top: 100px; 
+    }
+}
